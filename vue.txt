@@ -3,7 +3,10 @@
 迴圈 v-for
 事件 v-on
 屬性和樣式 v-bind
-雙向 v-model
+雙向 v-model 
+ - modifiers 
+    lazy, trim, number
+    v-model.lazy.number.trim
 data:數據選項
 Methods 方法選項
 Computed 計算屬性(方法)
