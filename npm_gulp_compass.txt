@@ -1,0 +1,2 @@
+沒有gulp的時期
+編譯scss或是sass成css時，需要compass程式，但每次存檔後編譯手動編譯很麻煩，因此有人會寫script自動化完成，但不只scss轉css，還需要minify javascript或是css的代碼，又要寫一個script去啟動uglify這類的程式，因此gulp這種會自動監聽，比對(watch)的程式就很方便囉!
