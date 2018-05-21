@@ -1,10 +1,14 @@
 數據渲染 v-text v-html 
-顯示隱藏 v-if v-show
+顯示隱藏 v-show
+顯示隱藏 v-if, v-else, v-else-if
 迴圈 v-for
 事件 v-on
  -modifiers
   stop, prevent, cature, self, native, once, passive, .left, .right, .middle, .{keyCode | keyAlias}
   ex: v-on:click.stop="func()"
+忽略該元素 v-pre  
+v-cloak
+v-once
 屬性和樣式 v-bind
 雙向 v-model 
  - modifiers 
@@ -13,4 +17,5 @@
 data:數據選項
 Methods 方法選項
 Computed 計算屬性(方法)
+filters 過濾
 Watch 監聽屬性
