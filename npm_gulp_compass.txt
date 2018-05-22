@@ -1,13 +1,10 @@
-沒有gulp的時期
-編譯scss或是sass成css時，需要compass程式，但每次存檔後編譯手動編譯很麻煩，因此有人會寫script自動化完成，但不只scss轉css，還需要minify javascript或是css的代碼，又要寫一個script去啟動uglify這類的程式，因此gulp這種會自動監聽，比對(watch)的程式就很方便囉!
-
-
 sass是基於ruby開發的程式，不只是副檔名.sass或是.scss，也是一個程式，能編譯scss或是sass的檔案成css的語法，使瀏覽器能看懂。
 因此先安裝ruby，然後安裝sass，就可以編譯scss檔案。編譯方式都是要打指令，有的人覺得每次打指令很麻煩，因此下達watch指令，每次存檔sass就會自編譯
 
 $ sudo apt install ruby
-$ ruby -v
+$ ruby -v (確認有安裝ruby)
 $ sudo gem install sass
+$ sass -v (確認有安裝sass)
 以上三行就是安裝指令
 
 $ sass A.scss A.css
@@ -18,3 +15,15 @@ $ sass --watch A.scss:A.css
 
 $ sass --watch A folder:B folder
 自動監聽資料夾
+
+---------------------------------------------------------------------------------------------------
+
+那為什麼要用gulp?
+
+寫js時，可能會用babel，編譯es6的語法至es5
+要改package.json檔 
+要compile scss 至 css
+要壓縮css和js檔
+
+但要是我每修改一次檔案，就得重複以上步驟太瑣碎了
+因此gulp這自動化的工具就因運而生
