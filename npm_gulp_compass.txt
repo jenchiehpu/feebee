@@ -27,3 +27,16 @@ $ sass --watch A folder:B folder
 
 但要是我每修改一次檔案，就得重複以上步驟太瑣碎了
 因此gulp這自動化的工具就因運而生
+
+現在前端的技術越來越多了，連帶的若要將專案發佈到主機上之前，您可能需要進行以下的步驟：
+1.將 Babel、TypeScript 及 CoffeeScript 編譯成 JavaScript
+2.將 LESS、SASS、SCSS 或 Stylus 編譯成 CSS
+3.再把 Jade、Slim 或 Haml 編譯成 HTML
+4.合併 HTML 頁面跟 layout
+5.將 CSS 加上前綴
+6.再把 CSS 和 JavaScript 各自成併成單一檔案
+7.壓縮 CSS 和 JavaScript 並產生 Source Map
+8.壓縮圖片
+9...
+
+看了這一連串的工作是不是頭的暈了呢？以上都還沒加上各種測試工作咧！如果在瀏覽器上查看發現有錯要進行小變更時，以上動作可能得再來一次了 XD。因此就有像是 Gulp.js 這樣的自動化建置工具出現啦！只要我們把要執行的各種動作都寫成一個個任務後，就能輕鬆完成一連串的動作囉！
